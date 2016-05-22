@@ -345,6 +345,9 @@ footer-col-3{
     font-size: 14px;
     color: #828282;
 }
+.readmore-p{
+    text-align: right;
+}
 
 .post-link{
     font-size: 24px;

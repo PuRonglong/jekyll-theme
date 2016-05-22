@@ -12,9 +12,13 @@ layout: default
 				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 			</h2>
 			<span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-			{% if post.content contains <!--more--> %}
-
-			{{ post.content }}
+			
+			{% if post.content contains '<!-- more -->' %}
+				{{ post.content | split:'<!-- more -->' | first %}}
+				<p class="readmore-p"><a class="btn btn-info" href="{{ post.url }}">Read more</a></p>
+			{% else %}
+				{{ post.content }}
+			{% endif %}
 		</li>
 	{% endfor %}
 	</ul>
