@@ -31,7 +31,7 @@ layout: default
         </li>
         <li>
         {% if paginator.page == 1 %}
-            <span>&laquo;</span>
+            <li class="disabled"><span>&laquo;</span></li>
         {% else %}
             {% if paginator.previous_page == 1 %}
             <a href="/">
@@ -57,7 +57,7 @@ layout: default
         {% endfor %}
         <li>
             {% if paginator.page == paginator.total_pages %}
-            <span>&raquo;</span>
+            <li class="disabled"><span>&raquo;</span></li>
             {% else %}
             <a href="/page{{ paginator.next_page }}">
                 <span>&raquo;</span>
