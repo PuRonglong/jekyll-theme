@@ -21,3 +21,6 @@ markdown: kramdown
 gems: [jekyll-paginate]
 paginate: 2
 paginate_path: "page:num"
+
+# 代码高亮
+highlighter: rouge
