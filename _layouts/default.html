@@ -5,10 +5,15 @@
 
 	<body>
 
-		{% include header.html %}
-		
 		{% include tag.html %}
 		
+		<div class="pull-left left-sidebar">
+			<ul class="header-list">
+				<li><a class="page-link" href="{{ site.baseurl }}/">Home</a></li>
+				<li><a class="page-link" href="/about/">About</a></li>
+				<li><a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
+			</ul>
+		</div>
 		<div class="page-content">
 			<div class="wrapper">
 				{{ content }}
