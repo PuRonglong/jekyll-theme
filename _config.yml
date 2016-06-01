@@ -19,7 +19,7 @@ github_username:  puronglong
 # Build settings
 markdown: kramdown
 gems: [jekyll-paginate]
-paginate: 8
+paginate: 15
 paginate_path: "page:num"
 
 # 代码高亮
